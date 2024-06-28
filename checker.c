@@ -1,5 +1,7 @@
 #include <stdio.h>
 #include <assert.h>
+#include <stdbool.h>
+
 bool isTempOk(float temperature){
   if(temperature < 0 || temperature > 45) {
     printf("Temperature out of range!\n");
