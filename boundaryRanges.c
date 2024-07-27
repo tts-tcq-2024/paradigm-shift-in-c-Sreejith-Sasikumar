@@ -1,5 +1,20 @@
 #include <stdio.h>
 #include <assert.h>
+#include "boundaryRanges.h"
+
+const char* get_condition(const char* parameter_name, int value, BoundaryRange ranges[], int num_ranges) {
+    for (int i = 0; i < num_ranges; i++) {
+        if (value >= ranges[i].lower_bound && value <= ranges[i].upper_bound) {
+            print_condition(parameter_name, ranges[i].condition);
+            return ranges[i].isValueValid;
+        }
+    }
+    return 0;
+}
+
+void print_condition(const char* parameter_name, const char* condition) {
+    printf("The condition for %s : %s.\n", parameter_name, condition);
+}
 
 int isTemperatureOk(float temperature) {
   if (temperature < 0 || temperature > 45) {
