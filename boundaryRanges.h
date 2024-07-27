@@ -5,6 +5,7 @@ typedef struct {
     float lower_bound;
     float upper_bound;
     const char* condition;
+    int isValueValid;
 } BoundaryRange;
 
 #define NUM_SOC_RANGES 5
