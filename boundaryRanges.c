@@ -10,7 +10,7 @@ int is_within_range(int value, BoundaryRange range) {
     return value >= range.lower_bound && value <= range.upper_bound;
 }
 
-const char* get_condition(const char* parameter_name, int value, BoundaryRange ranges[], int num_ranges) {
+int get_condition(const char* parameter_name, int value, BoundaryRange ranges[], int num_ranges) {
     for (int i = 0; i < num_ranges; i++) {
         if (is_within_range(value, ranges[i])) {
             print_condition(parameter_name, ranges[i].condition);
