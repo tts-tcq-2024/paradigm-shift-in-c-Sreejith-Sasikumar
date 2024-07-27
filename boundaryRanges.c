@@ -47,7 +47,9 @@ int isChargeRateOk(float chargeRate) {
 }
 
 int batteryIsOk(float temperature, float soc, float chargeRate) {
-  return isTemperatureOk(temperature) && isSocOk(soc) && isChargeRateOk(chargeRate);
+  return    get_condition("SOC", soc, soc_ranges, NUM_SOC_RANGES) &&
+            get_condition("Temperature", temperature, temp_ranges, NUM_TEMP_RANGES) &&
+            get_condition("Charge rate", chargeRate, charge_rate_ranges, NUM_CHARGE_RATE_RANGES);
 }
 
 int main() {
