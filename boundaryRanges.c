@@ -6,44 +6,18 @@ void print_condition(const char* parameter_name, const char* condition) {
     printf("The condition for %s : %s.\n", parameter_name, condition);
 }
 
+int is_within_range(int value, BoundaryRange range) {
+    return value >= range.lower_bound && value <= range.upper_bound;
+}
+
 const char* get_condition(const char* parameter_name, int value, BoundaryRange ranges[], int num_ranges) {
     for (int i = 0; i < num_ranges; i++) {
-        if (value >= ranges[i].lower_bound && value <= ranges[i].upper_bound) {
+        if (is_within_range(value, ranges[i])) {
             print_condition(parameter_name, ranges[i].condition);
             return ranges[i].isValueValid;
         }
     }
     return 0;
-}
-
-int isTemperatureOk(float temperature) {
-  if (temperature < 0 || temperature > 45) {
-    printf("Temperature out of range!\n");
-    return 0;
-  }
-  else{
-    return 1;
-  }
-}
-
-int isSocOk(float soc) {
-  if (soc < 20 || soc > 80) {
-    printf("State of Charge out of range!\n");
-    return 0;
-  }
-  else {
-    return 1;
-  }
-}
-
-int isChargeRateOk(float chargeRate) {
-  if (chargeRate > 0.8) {
-    printf("Charge Rate out of range!\n");
-    return 0;
-  }
-  else {
-    return 1;
-  }
 }
 
 int batteryIsOk(float temperature, float soc, float chargeRate) {
