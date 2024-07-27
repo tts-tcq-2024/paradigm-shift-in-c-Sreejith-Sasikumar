@@ -1,6 +1,6 @@
 # paradigm-shift-c
 
-# 27 July 2024: Update - Added [Extension 1: Early Warning](https://github.com/tts-tcq-2024/assignments/blob/main/paradigm-shift-extend.md#extension-1-early-warning) to the code. 
+27 July 2024: Update - Added [Extension 1: Early Warning](https://github.com/tts-tcq-2024/assignments/blob/main/paradigm-shift-extend.md#extension-1-early-warning) to the code. 
 
 # Programming Paradigms
 
