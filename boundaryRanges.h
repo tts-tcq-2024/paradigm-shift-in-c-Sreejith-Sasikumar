@@ -1,6 +1,6 @@
 typedef struct {
-    int lower_bound;
-    int upper_bound;
+    float lower_bound;
+    float upper_bound;
     const char* condition;
 } BoundaryRange;
 
