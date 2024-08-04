@@ -1,3 +1,4 @@
-extern BoundaryRange soc_ranges[];
-extern BoundaryRange temp_ranges[];
-extern BoundaryRange charge_rate_ranges[];
+#include "boundaryRanges.h"
+BoundaryRange soc_ranges[];
+BoundaryRange temp_ranges[];
+BoundaryRange charge_rate_ranges[];
