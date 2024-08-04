@@ -21,3 +21,7 @@ BoundaryRange charge_rate_ranges[] = {
     {0.77, 0.8, "HIGH_CHARGE_RATE_WARNING", 0},
     {0.81, 1, "OVER_CHARGE_RATE_BREACH", 0}
 };
+
+int SOC_RANGES_LIMIT = sizeof(soc_ranges) / sizeof(soc_ranges[0]);                       // 5
+int TEMP_RANGES_LIMIT = sizeof(temp_ranges) / sizeof(temp_ranges[0]);                    // 5
+int CHARGE_RATE_LIMIT = sizeof(charge_rate_ranges) / sizeof(charge_rate_ranges[0]);      // 3
