@@ -21,9 +21,9 @@ int get_condition(const char* parameter_name, int value, BoundaryRange ranges[],
 }
 
 int batteryIsOk(float temperature, float soc, float chargeRate) {
-  return    get_condition("SOC", soc, soc_ranges, NUM_SOC_RANGES) &&
-            get_condition("Temperature", temperature, temp_ranges, NUM_TEMP_RANGES) &&
-            get_condition("Charge rate", chargeRate, charge_rate_ranges, NUM_CHARGE_RATE_RANGES);
+  return    get_condition("SOC", soc, soc_ranges, SOC_RANGES_LIMIT) &&
+            get_condition("Temperature", temperature, temp_ranges, TEMP_RANGES_LIMIT) &&
+            get_condition("Charge rate", chargeRate, charge_rate_ranges, CHARGE_RATE_RANGES_LIMIT);
 }
 
 int main() {
