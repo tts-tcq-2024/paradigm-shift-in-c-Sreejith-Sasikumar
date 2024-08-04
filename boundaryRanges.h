@@ -14,6 +14,6 @@ extern BoundaryRange charge_rate_ranges[];
 
 extern int SOC_RANGES_LIMIT;
 extern int TEMP_RANGES_LIMIT;
-extern int CHARGE_RATE_RANGES_LIMIT;
+extern int CHARGE_RATE_LIMIT;
 
 #endif
