@@ -1,4 +1,4 @@
-#include "boundaryRanges.h"
+#include "initializeBoundaryRanges.h"
 
 BoundaryRange soc_ranges[] = {
     {0, 20, "LOW_SOC_BREACH", 0},
