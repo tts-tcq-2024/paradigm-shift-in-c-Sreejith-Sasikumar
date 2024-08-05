@@ -4,7 +4,7 @@
 typedef struct {
     float lower_bound;
     float upper_bound;
-    const char* condition;
+    const char* message;
     int isValueValid;
 } BoundaryRange;
 
