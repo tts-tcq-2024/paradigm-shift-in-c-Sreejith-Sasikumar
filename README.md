@@ -1,5 +1,8 @@
 # paradigm-shift-c
 
+- 27 July 2024: Update - Added [Extension 1: Early Warning](https://github.com/tts-tcq-2024/assignments/blob/main/paradigm-shift-extend.md#extension-1-early-warning) to the code. 
+- 04 August 2024: Update - Refactored, by adding the warnings enable or disabling option
+
 # Programming Paradigms
 
 Electric Vehicles have BMS - Battery Management Systems
